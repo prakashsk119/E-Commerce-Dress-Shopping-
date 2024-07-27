@@ -1,0 +1,154 @@
+.cartitems{
+    margin: 60px 100px;
+}
+.cartitems hr{
+    height: 3px;
+    background: #e2e2e2;
+    border:0 ;
+}
+.cartitems-main{
+    display: grid;
+    grid-template-columns:0.5fr 2fr 1fr 1fr 1fr 1fr ;
+    align-items: center;
+    gap:50px ;
+    padding: 10px 0px;
+    color: #454545;
+    font-size: 14px;
+    font-weight: 600;
+}
+.cartitems-format{
+    font-size: 13px;
+    font-weight: 500;
+}
+.carticon{
+    height: 50px;
+
+}
+.cartitems-remove-icon{
+    width: 10px;
+    margin: 0px 20px;
+    cursor: pointer;
+}
+.cartitems-quantity{
+    width: 50px;
+    height: 30px;
+    border: 2px solid #ebebeb;
+    background: #fff;
+}
+.cartitems-down{
+    display: flex;
+    margin: 60px 0px;
+}
+.cartitems-total{
+display: flex;
+flex-direction: column;
+margin-right: 300px;
+gap: 20px;
+}
+.cartitems-total-item{
+    display: flex;
+    justify-content: space-between;
+    padding:10px 0px ;
+
+}
+.cartitems-total button{
+    width: 240px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: #ff5a5a;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+.cartitems-promocode{
+    flex: 1;
+    font-size: 15px;
+    font-weight: 500;
+}
+.cartitems-promocode p{
+    color: #555;
+}
+.cartitems-promo-box{
+    width: 340px;
+    margin-top: 15px;
+    padding-left: 15px;
+    background: #eaeaea;
+}
+.cartitems-promo-box input{
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    width: 260px;
+    height: 40px;
+}
+.cartitems-promo-box button{
+    width: 70px;
+    height: 40px;
+    font-size: 16px;
+background: black;
+color: white;
+    cursor: pointer;
+}
+@media (max-width:1280px) {
+    
+    .cartitems{
+       margin: 50px 40px;
+    }
+    .cartitems-main{
+        grid-template-columns: 0.5fr 3fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        gap: 10px;
+        padding: 10px 0px;
+        font-size: 13px;
+    }
+    .carticon{
+        height: 50px;
+    }
+    .cartitems-remove-icon{
+       margin-right: -20px;
+    }
+    .cartitems-quantity{
+        width: 30px;
+        height: 20px;
+    }
+    .cartitems-down{
+        margin: 70px 0px;
+        flex-direction: column;
+        gap: 70px;
+    }
+    .cartitems-total{
+        margin: 0;
+    }
+    .cartitems-total button{
+        max-width: 200px;
+        height: 40px;
+        font-size: 13px;
+    }
+    .cartitems-promo-box{
+        /* width: auto; */
+        max-width: 360px;
+        height: 40px;
+    }
+    .cartitems-promo-box input{
+        width:60%;
+    }
+    .cartitems-promo-box button{
+        width: 120px;
+       margin-bottom: 90px;
+       
+    }
+  
+}
+@media (max-width:500px) {
+    .cartitems-main{
+        display: none;
+        grid-template-columns: 0.5fr 3fr 0.5fr;
+        gap: 10px;
+    }
+    .cartitems-format{
+        display: grid;
+    }
+}
